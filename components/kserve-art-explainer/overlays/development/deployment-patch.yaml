@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: kserve-art-explainer
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhoai-tenant/kserve-art-explainer/kserve-art-explainer@sha256:606a9c147248c6eccaa07450c47a71d639f494b356365a9d8998535252fa7e7c
+        name: container-image
+        resources: {}
+status: {}
